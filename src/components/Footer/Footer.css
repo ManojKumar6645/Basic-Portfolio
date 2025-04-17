@@ -1,0 +1,49 @@
+/* Custom CSS for Footer Component */
+.footer {
+    /* background: linear-gradient(135deg, #2c3e50, #34495e); */
+    padding: 60px 0;
+  }
+  
+  .social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    color: #ffc107;
+    font-size: 1.5rem;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #ffc107;
+    transform: translateY(-5px);
+  }
+  
+  .copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+  }
+  
+  .p-small {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+  }
+  
+  .no-line {
+    text-decoration: none;
+  }
+  
+  .no-line:hover {
+    text-decoration: underline;
+  }

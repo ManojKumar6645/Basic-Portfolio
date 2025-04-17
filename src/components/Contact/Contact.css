@@ -1,0 +1,134 @@
+/* Custom CSS for Contact Page */
+.form-1 {
+    background-color: #343a40; /* Dark background to match the header */
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffc107; /* Yellow color for the heading */
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .p-heading {
+    font-size: 1.1rem;
+    color: #ddd; /* Light gray text color */
+    margin-bottom: 40px;
+  }
+  
+  .p-heading a {
+    color: #ffc107; /* Yellow link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .p-heading a:hover {
+    color: #e0a800; /* Darker yellow on hover */
+  }
+  
+  /* Form Styling */
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-control-input,
+  .form-control-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Darker border color */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+    background-color: #343a40; /* Dark input background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 8px; /* Added gap between label and input */
+  }
+  
+  .form-control-input:focus,
+  .form-control-textarea:focus {
+    border-color: #ffc107; /* Yellow border on focus */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Yellow shadow */
+    outline: none;
+  }
+  
+  .label-control {
+    font-size: 1rem;
+    color: #ddd; /* Light gray label color */
+    transition: all 0.3s ease;
+  }
+  
+  .form-control-textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Submit Button */
+  .form-control-submit-button {
+    background-color: #ffc107; /* Yellow button color */
+    color: #1a1a1a; /* Dark text color */
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-control-submit-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Animation for Section Title */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991.98px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .p-heading {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .form-1 {
+      padding: 60px 0;
+    }
+  
+    .section-title {
+      font-size: 1.75rem;
+    }
+  
+    .p-heading {
+      font-size: 0.95rem;
+    }
+  
+    .form-control-input,
+    .form-control-textarea {
+      font-size: 0.95rem;
+    }
+  
+    .label-control {
+      font-size: 0.95rem;
+    }
+  
+    .form-control-submit-button {
+      width: 100%;
+    }
+  }

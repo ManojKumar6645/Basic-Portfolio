@@ -2,8 +2,10 @@ import React from "react";
 import { FaCode, FaDatabase, FaLaptopCode, FaGraduationCap, FaUserFriends, FaChalkboardTeacher, FaCloud } from "react-icons/fa";
 import { SiDotnet, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiJavascript, SiBootstrap } from "react-icons/si";
 import "./About.css"; // Custom CSS for additional styling
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { t } = useTranslation();
     return (
         <>
             {/* Summary Section */}
@@ -13,10 +15,9 @@ const About = () => {
                         {/* First Column */}
                         <div className="col-lg-4">
                             <div className=" heading text-container first">
-                                <h2 className="text-black">Hi there, I'm Manoj,</h2>
+                                <h2 className="text-black">{t("about.summary.greeting")}</h2>
                                 <p>
-                                    As a dedicated Software Developer at Salgem Infoigy Tech Pvt. Ltd., I specialize in designing and developing high-performance web and Windows applications using cutting-edge technologies such as .NET, ASP.NET, React, and Node.js. With a proven track record of delivering impactful solutions, I have successfully built scalable e-learning platforms, robust inventory management systems, and dynamic, responsive websites that prioritize seamless user experiences and optimized system performance.
-                                </p>
+                                {t("about.summary.description")}                                </p>
                             </div>
                         </div>
 

@@ -1,0 +1,89 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "logo": "Manoj Kumar"
+    },
+    "home": {
+      "heading": "I love to create scalable and innovative web solutions",
+      "description": "Hi, I'm Manoj! I specialize in building modern, responsive, and user-friendly web applications using .NET, React, and Node.js. With expertise in e-learning, e-governance, and CRM systems, I deliver seamless digital experiences that drive efficiency and engagement.",
+      "discover_button": "Discover",
+      "contact_button": "Contact Me"
+    },
+
+
+
+
+
+    
+        "about": {
+          "summary": {
+            "greeting": "Hi there, I'm Manoj,",
+            "description": "As a dedicated Software Developer at Salgem Infoigy Tech Pvt. Ltd., I specialize in designing and developing high-performance web and Windows applications using cutting-edge technologies such as .NET, ASP.NET, React, and Node.js. With a proven track record of delivering impactful solutions, I have successfully built scalable e-learning platforms, robust inventory management systems, and dynamic, responsive websites that prioritize seamless user experiences and optimized system performance.",
+            "job1_title": "Software Developer",
+            "job1_company": "Working at Salgem Infoigy Tech Pvt. Ltd., Noida",
+            "job2_title": "Internship",
+            "job2_company": "Gained hands-on experience in Asp.Net technology at K Soft Vision, Lucknow",
+            "edu1_title": "B.Sc. Information Technology",
+            "edu1_detail": "Graduated from Baba Saheb Bhim Rao Ambedkar University (Central University) Lucknow",
+            "edu2_title": "Intermediate",
+            "edu2_detail": "Completed from S V I C"
+          },
+      
+          "internship": {
+            "title": "Internship",
+            "exp1_company": "Salgem Infoigy Tech Pvt Ltd",
+            "exp1_role": "Software Developer | 05/2024 - 01/2025 | Noida",
+            "exp1_skill": "Skill development: Gaining hands-on experience in e-learning, e-governance, and CRM systems through real-world projects.",
+            "exp1_tech": "Technology Exploration: Actively learning and implementing new technologies, frameworks, and tools to stay updated with industry trends and enhance technical expertise.",
+            "exp1_cloud": "Future Focus: Expanding knowledge in cloud computing to build scalable, innovative, and future-ready software solutions.",
+            "exp2_company": "K Soft Vision",
+            "exp2_role": "Internship | 01/2024 - 04/2024 | Lucknow, Uttar Pradesh",
+            "exp2_detail": "Gained hands-on experience in Asp.Net technology, working on backend logic, frontend design, and database integration."
+          },
+      
+          "projects": {
+            "title": "Projects",
+            "proj1_title": "Inventory Management System",
+            "proj1_tech": "Technologies: C#, .NET, SQL Server",
+            "proj1_detail": "Designed an intuitive user interface for managing inventory, sales, and customer records. Implemented robust database functionalities to ensure data integrity and security.",
+            "proj2_title": "CRM (Customer Relationship Management)",
+            "proj2_tech": "Technologies: HTML, CSS, C#, ASP.NET, SQL",
+            "proj2_detail": "Designed and implemented a user-friendly interface, integrated database functionalities, and ensured seamless communication between departments.",
+            "proj3_title": "E-Learning Web Application",
+            "proj3_tech": "Technologies: React, Node.js, MySQL, Bootstrap",
+            "proj3_detail": "Developed a comprehensive e-learning web application for an educational institute, enabling students to browse, purchase, and access courses online...",
+            "proj4_title": "E-Governance Project",
+            "proj4_tech": "Technologies: Node.js, React, Google APIs, WhatsApp API",
+            "proj4_detail": "Currently working on backend development, focusing on integrating WhatsApp chatbots, Google APIs, and implementing forms validation processes."
+          },
+      
+          "education": {
+            "title": "Education",
+            "edu1_title": "B.Sc. Information Technology",
+            "edu1_detail": "Baba Saheb Bhim Rao Ambedkar University | 05/2020 - 04/2024 | CGPA: 8/10",
+            "edu1_para": "During my undergraduate studies, I gained a strong foundation in programming languages such as C, C++, and Java...",
+            "edu2_title": "Intermediate",
+            "edu2_detail": "S V I C | 04/2018 - 05/2019",
+            "edu3_title": "High School",
+            "edu3_detail": "S V I C | 04/2016 - 05/2017"
+          },
+      
+          "skills": {
+            "title": "Skills",
+            "items": ["C#", ".NET", "React", "Node.js", "HTML", "CSS", "MySQL", "JavaScript", "Bootstrap"]
+          },
+      
+          "volunteer": {
+            "title": "Volunteer Experience",
+            "exp1_title": "VIBHA, Lucknow",
+            "exp1_detail": "Assisted in event coordination and interacted with renowned scientists and professors.",
+            "exp2_title": "IISF, Faridabad and Bhopal",
+            "exp2_detail": "Participated in poster presentations and assisted in event coordination at the India International Science Festival."
+          }
+        }
+      
+      
+  }
+  

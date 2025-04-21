@@ -3,6 +3,7 @@ import "./App.css";
 import "./assets/css/styles.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./i18n.js";
 import Header from "./components/Header/Header.js";    
 import Home from "./components/Home/Home.js";
 import About from "./components/About/About.js";

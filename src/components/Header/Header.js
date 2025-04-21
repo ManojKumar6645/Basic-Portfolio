@@ -2,21 +2,30 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./Header.css"; // Custom CSS for additional styling
+import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close the mobile menu when a link is clicked
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path ? "active" : "";
+  };
+
+  const handleLanguageChange = (e) => {
+    i18n.changeLanguage(e.target.value);
   };
 
   useEffect(() => {
@@ -27,18 +36,12 @@ const Header = () => {
     }
   }, [isOpen]);
 
-  // Function to check if a link is active
-  const isActive = (path) => {
-    return location.pathname === path ? "active" : "";
-  };
-
   return (
     <>
-      {/* Navbar */}
       <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div className="container">
-          <Link className="navbar-brand logo-text" to="/" onClick={closeMenu}>
-            Manoj Kumar
+          <Link className="navbar-brand logo-text" to="/" onClick={closeMenu} >
+          {t("header.logo")}
           </Link>
           <button
             className="navbar-toggler p-0 border-0"
@@ -55,32 +58,32 @@ const Header = () => {
           >
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/")}`}
-                  to="/"
-                  onClick={closeMenu}
-                >
-                  Home
+                <Link className={`nav-link ${isActive("/")}`} to="/" onClick={closeMenu}>
+                  {t("header.about")}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/about")}`}
-                  to="/about"
-                  onClick={closeMenu}
-                >
-                  About
+                <Link className={`nav-link ${isActive("/about")}`} to="/about" onClick={closeMenu}>
+                  {t("header.about")}
                 </Link>
               </li>
-             
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/contact")}`}
-                  to="/contact"
-                  onClick={closeMenu}
-                >
-                  Contact
+                <Link className={`nav-link ${isActive("/contact")}`} to="/contact" onClick={closeMenu}>
+                  {t("header.contact")}
                 </Link>
+              </li>
+
+              {/* 🌐 Language Selector Dropdown */}
+              <li className="nav-item dropdown">
+                <select
+                  className="form-select form-select-sm ms-3"
+                  style={{ width: "120px" }}
+                  onChange={handleLanguageChange}
+                  value={i18n.language}
+                >
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी</option>
+                </select>
               </li>
             </ul>
 
@@ -98,7 +101,7 @@ const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
-                aria-label="Visit Manoj Kumar's LinkedIn Profile"
+                aria-label="Visit LinkedIn"
               >
                 <FaLinkedin />
               </a>
@@ -106,8 +109,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
-      {/* Hero Section */}
     </>
   );
 };
